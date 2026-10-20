@@ -1,0 +1,1 @@
+When the y axis is pointing down, this performs a clockwise rotation. When the y axis is pointing up, it performs a counter clockwise rotation.

@@ -1,0 +1,11 @@
+1) Top half:
+(200, 450) -> (600, 150) -> (200, 150)
+
+Bottom half:
+(200, 450) -> (600, 450) -> (600, 150)
+
+2) 
+2 points are shared between the two triangles, so there are a total of 4 unique points. Each point contains 2 floats, 8 bytes per points, so there would be 8 * 4 = 32 bytes for all unique points. There can be an index buffer for each triangle that indexes 3 of those points to get the triangle, making for 6 total indices stored, so there would be 24 bytes for indices. With indices and floats, there would be 32 + 24 = 56 total bytes, which would not be an improvement over just storing points which would require 6 * 8 = 48 bytes. With indices and doubles for points, there would be 88 bytes for all points, which would be an improvement over just storing points which would require 6 * 16 = 96 bytes.
+
+3)
+(500 / 800 + 301 / 600) = (0.625, 0.50167)
